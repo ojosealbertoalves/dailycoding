@@ -1,0 +1,17 @@
+/* ex001.css */
+body {
+    background-color: lightblue; /* Cor de fundo (pode ser nome, HEX, RGB, etc.) */
+   
+}
+
+h1 {
+    color: darkblue; /* Cor do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+p {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
