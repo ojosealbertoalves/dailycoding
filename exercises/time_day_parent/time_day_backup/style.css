@@ -39,7 +39,7 @@ section {
     box-shadow: 50px 5px 10px black(0,0,0,0.363);
 }
 
-section div {
+/*section div {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -47,6 +47,12 @@ section div {
     width: 100%;
     max-width: 500px;
     min-height: 200px;
+}*/
+
+
+div{
+    text-align: center;
+    padding: 8px;
 }
 
 footer {
