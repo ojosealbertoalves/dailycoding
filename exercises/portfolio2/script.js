@@ -4,7 +4,7 @@ function check() {
     const txtyear = document.getElementById("txtyear");
     const res = document.querySelector('div#res');
 
-    // Limpa resultados anteriores
+    
     res.innerHTML = '';
 
     if (txtyear.value.length == 0 || Number(txtyear.value) > year) {
@@ -15,8 +15,8 @@ function check() {
         let gender = '';
         let img = document.createElement('img');
         
-        // Configurações padrão da imagem
-        img.style.width = '150px'; // Tamanho pequeno
+       
+        img.style.width = '150px'; 
         img.style.height = 'auto';
         img.style.borderRadius = '8px';
         img.style.marginTop = '15px';
@@ -54,14 +54,14 @@ function check() {
             }
         }
         
-        // Criando elemento de resultado
+        
         const resultText = document.createElement('p');
         resultText.textContent = `We identified ${gender} with ${age} years old.`;
         resultText.style.fontWeight = 'bold';
         resultText.style.fontSize = '1.1rem';
         resultText.style.marginBottom = '10px';
 
-        // Adicionando elementos ao DOM
+        
         res.style.textAlign = 'center';
         res.appendChild(resultText);
         res.appendChild(img);
