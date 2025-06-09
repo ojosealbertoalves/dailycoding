@@ -11,11 +11,60 @@
   <input type="number" id="display" value="0" disabled="true"/>
   <table>
 <tr>
-      <td>
+      
+
+    
+
+       <tr>
+        <td>
+            <button onclick="updatedisplay('7')">7</button>
+        </td>  
+         <td>
+            <button onclick="updatedisplay('8')">8</button>
+        </td>  
+         <td>
+            <button onclick="updatedisplay('9')">9</button>
+        </td>  
+         <td>
+            <button onclick="alert('clear')">CE</button>
+        </td>  
+       </tr>
+
+         <tr>
+        <td>
+            <button onclick="updatedisplay('4')">4</button>
+        </td>  
+         <td>
+            <button onclick="updatedisplay('5')">5</button>
+        </td>  
+         <td>
+            <button onclick="updatedisplay('6')">6</button>
+        </td>  
+         <td>
+            <button onclick="updateoperation('+')">+</button>
+        </td> 
+
+       </tr>
+<tr>
+       <td>
+            <button onclick="updatedisplay('1')">1</button>
+        </td>  
+         <td>
+            <button onclick="updatedisplay('2')">2</button>
+        </td>  
+         <td>
+            <button onclick="updatedisplay('3')">3</button>
+        </td>  
+         <td>
+            <button onclick="alert('-')">-</button>
+        </td> 
+ </tr>
+<tr>
+       <td>
             <button onclick="alert('=')">=</button>
         </td>  
          <td>
-            <button onclick="alert('0')">0</button>
+            <button onclick="updatedisplay('0')">0</button>
         </td>  
          <td>
             <button onclick="alert('x')">x</button>
@@ -24,58 +73,12 @@
             <button onclick="alert('/')">/</button>
         </td>
         </tr>
-    <tr>
-       
-
-        <td>
-            <button onclick="alert('1')">1</button>
-        </td>  
-         <td>
-            <button onclick="alert('2')">2</button>
-        </td>  
-         <td>
-            <button onclick="alert('3')">3</button>
-        </td>  
-         <td>
-            <button onclick="alert('-')">-</button>
-        </td> 
+    
 
 
-      <tr>
-        <td>
-            <button onclick="alert('4')">4</button>
-        </td>  
-         <td>
-            <button onclick="alert('5')">5</button>
-        </td>  
-         <td>
-            <button onclick="alert('6')">6</button>
-        </td>  
-         <td>
-            <button onclick="alert('+')">+</button>
-        </td> 
-
-       </tr>
-
-       <tr>
-        <td>
-            <button onclick="alert('7')">7</button>
-        </td>  
-         <td>
-            <button onclick="alert('8')">8</button>
-        </td>  
-         <td>
-            <button onclick="alert('9')">9</button>
-        </td>  
-         <td>
-            <button onclick="alert('clear')">CE</button>
-        </td>  
-       </tr>
-
-       
 
   </table>
   
-
+    <script src="app.js"></script>
 </body>
 </html>
