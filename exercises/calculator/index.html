@@ -12,10 +12,7 @@
   <table>
 <tr>
       
-
-    
-
-       <tr>
+        <tr>
         <td>
             <button onclick="updatedisplay('7')">7</button>
         </td>  
@@ -26,7 +23,7 @@
             <button onclick="updatedisplay('9')">9</button>
         </td>  
          <td>
-            <button onclick="alert('clear')">CE</button>
+            <button onclick="clear()">CE</button>
         </td>  
        </tr>
 
@@ -56,26 +53,24 @@
             <button onclick="updatedisplay('3')">3</button>
         </td>  
          <td>
-            <button onclick="alert('-')">-</button>
+            <button onclick="updateoperation('-')">-</button>
         </td> 
  </tr>
 <tr>
        <td>
-            <button onclick="alert('=')">=</button>
+            <button onclick="solve()">=</button>
         </td>  
          <td>
             <button onclick="updatedisplay('0')">0</button>
         </td>  
          <td>
-            <button onclick="alert('x')">x</button>
+            <button onclick="updateoperation('x')">x</button>
         </td>  
          <td>
-            <button onclick="alert('/')">/</button>
+            <button onclick="updateoperation('/')">/</button>
         </td>
         </tr>
     
-
-
 
   </table>
   

@@ -74,7 +74,7 @@ button[onclick*="'='"] {
     background-color: #4CAF50;
 }
 
-button[onclick*="'clear'"] {
+button[onclick*="solve()"] {
     background-color: #f44336;
     color: white;
 }
@@ -91,6 +91,6 @@ button[onclick*="'='"]:hover {
     background-color: #3e8e41;
 }
 
-button[onclick*="'clear'"]:hover {
+button[onclick*="clear()"]:hover {
     background-color: #d32f2f;
 }
