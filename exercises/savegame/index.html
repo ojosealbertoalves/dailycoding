@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Save game</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <ul class="image-gallery">
+                <!-- Item 1 -->
+                <li class="gallery-item">
+                    <div class="img-item">
+                    <img src="./Games/fifa25.JPG" alt="img1">
+                    </div>
+                    <button class="action-button" onclick="change(1)" id="button1">Action 1</button>
+                </li>
+                
+                <!-- Item 2 -->
+                <li class="gallery-item" id="img2">
+                     <div class="img-item">
+                    <img src="./Games/spiderman.JPG" alt="image2">
+                    </div>
+                    <button class="action-button" onclick="change(2)" id="button2">Action 2</button>
+                </li>
+                
+                <!-- Item 3 -->
+                <li class="gallery-item" id="img3">
+                    <div class="img-item">
+                    <img src="./Games/dragonball.JPG" alt="image3">
+                    </div>
+                    <button class="action-button" onclick="change(3)" id="button3">Action 3</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

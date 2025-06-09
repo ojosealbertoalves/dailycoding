@@ -92,10 +92,17 @@
             transform: translateY(-2px);
         }
 
-        #reset {
+        .reset {
             background-color: #e74c3c;
             color: white;
         }
+
+         .resetgray {
+            background-color:gray;
+            color: white;
+            cursor: not-allowed;
+        }
+
 
         #reset:hover {
             background-color: #c0392b;
