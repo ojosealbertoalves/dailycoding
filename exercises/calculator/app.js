@@ -9,7 +9,7 @@ let number1=0;
         input.value="0";
     }
 
-function clear(){
+function clearDisplay(){
     input.value="0";
 }
 
