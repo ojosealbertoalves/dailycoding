@@ -1,4 +1,4 @@
-function checknumber(number) {
+function checknumber2(number) {
     if (number % 2 === 0) {
         console.log("This is an even number");
     } else {
@@ -6,4 +6,4 @@ function checknumber(number) {
     }
 }
 
-module.exports={checknumber};
+module.exports={checknumber2};
