@@ -2,6 +2,16 @@ const readline = require('node:readline/promises');
 const { stdin: input, stdout: output } = require('node:process');
 const rl = readline.createInterface({ input, output });
 
+async function listCustomers(){
+  console.log(customers);
+   await rl.question("Press Enter to continue...")
+   printMenu();
+}
+
+async function startRegistrtion(){
+    const name=await rl.question("What do you want?")
+}
+
 async function printMenu() {
 console.clear();
 console.log("Menu:");
@@ -10,10 +20,17 @@ console.log("2-See customers registered");
 console.log("3-Finish")
 
 const answer=await rl.question('What option do you want?');
-    console.log(answer);
+switch(answer){
+    case "1":startRegistration();break;
+    case "2": listCustomers(); break;
+    case "3": process.exit(0);
+    default: console.log("Wrong question, try again.");
+}
+
+  
     await rl.question("Press Enter to continue...")
-    setTimeout(printMenu,3000);
-    printMenu();
+   
+       printMenu();
 
   }
 
