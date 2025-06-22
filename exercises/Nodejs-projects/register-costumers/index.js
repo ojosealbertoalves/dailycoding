@@ -8,8 +8,11 @@ async function listCustomers(){
    printMenu();
 }
 
-async function startRegistrtion(){
-    const name=await rl.question("What do you want?")
+async function startRegistration(){
+    const name=await rl.question("What is the customer name?")
+    const address=await rl.question("What is the customer address?")
+    const id=customers.length>0? customers[customers.length-1].id+1:1;
+
 }
 
 async function printMenu() {
