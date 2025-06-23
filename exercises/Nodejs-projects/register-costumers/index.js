@@ -2,17 +2,26 @@ const readline = require('node:readline/promises');
 const { stdin: input, stdout: output } = require('node:process');
 const rl = readline.createInterface({ input, output });
 
+const customers = [];
+
 async function listCustomers(){
+    console.clear();
   console.log(customers);
    await rl.question("Press Enter to continue...")
    printMenu();
 }
 
 async function startRegistration(){
+    console.clear();
     const name=await rl.question("What is the customer name?")
     const address=await rl.question("What is the customer address?")
-    const id=customers.length>0? customers[customers.length-1].id+1:1;
-
+    const id=customers.length>0
+         ?customers[customers.length-1].id+1
+          :1;
+ customers.push({name,address,id})
+ console.log("Registratioon successful")
+   await rl.question("Press Enter to continue...")
+   printMenu();
 }
 
 async function printMenu() {
