@@ -1,24 +1,26 @@
-const customers = [];
+const fs=require("fs");
 
-// Versão 1: Recebendo parâmetros separados
-function addCustomer(name, address, cpf) {
-    const id = customers.length > 0 ? customers[customers.length - 1].id + 1 : 1;
-    customers.push({ name, address, cpf, id });
+const customers=[];
+
+function addCustomer(name,address,cpf){
+
+    const id=customers.length>0
+    ? customers[customers.length-1].id+1
+    : 1;
+
+    customers.push({name,address,id,cpf});
+    fs.writeFileSync("db.json",JSON.stringify(customers));
+
     return id;
 }
 
-
-function addCustomer(customerData) {
-    const id = customers.length > 0 ? customers[customers.length - 1].id + 1 : 1;
-    customers.push({ ...customerData, id });
-    return id;
-}
-
-function getCustomers() {
+function getCustomers(){
+    const customersString=fs.readFileSync("db.json","utf-8");
+    customers=JSON.parse(customersString);
     return customers;
 }
 
-module.exports = {
+module.exports={
     addCustomer,
     getCustomers
-};
+}
